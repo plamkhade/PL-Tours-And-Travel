@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+<style>
+body {
+font-family: Arial, Helvetica, sans-serif;
+background-image: url('./resources//images//lg.webp');
+background-repeat: no-repeat;
+background-size: cover;
+}
+h1{
+color: red;
+  text-shadow: 2px 2px 4px #000000;
+ transform: translateX(100%);
+	animation: scrolling 15s linear infinite;
+  
+}
+@keyframes scrolling {
+  0% {transform:translateX(100%);}
+  100%{transform:translateX(-100%);}
+}
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: #45a049;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color:blue;
+}
+
+
+
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+ 
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+.container{
+border:2px;
+background-color: #eeeeee;
+width:750px;
+margin-left:350px;
+margin-top:30px;
+}
+
+h1 {
+margin-top:20px;
+	color: red;
+	text-shadow: 2px 2px 4px #000000;
+	transform: translateX(100%);
+	animation: scrolling 15s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {transform:translateX(100%);}
+  100%{transform:translateX(-100%);}
+}
+
+</style>
+</head>
+<body>
+
+
+
+<!-- navbar -->
+<nav class="navbar navbar-expand-lg " style="background-color: #FFD700;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">🌍PL Tours And Travel</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class=" d-flex" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="About.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Package.html">Packages</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Destination.html">Destination</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="Contact.html">Contact Us</a>
+        </li>
+      </ul>
+      
+    </div>
+  </div>
+</nav>
+
+<div class="div1">
+				<h1>🌍PL Tours And Travels</h1>
+			</div>
+
+
+
+<div class="container">
+<form action="Registerser" method="post">
+  <div class="row">
+    <div class="col-25">
+      <label for="id">Id</label>
+    </div>
+    <div class="col-75">
+      <input type="number" id="id" name="id" required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="country">Country</label>
+    </div>
+    <div class="col-75">
+      <select id="country" name="country">
+        <option value="australia">Australia</option>
+        <option value="canada">Canada</option>
+        <option value="usa">USA</option>
+        <option value="india">India</option>
+      </select>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="address">Address</label>
+    </div>
+    <div class="col-75">
+     <input type="text" id="address" name="address" required>
+    </div>
+  </div>
+  <br>
+   <div class="row">
+    <div class="col-25">
+      <label for="phone">Phone</label>
+    </div>
+    <div class="col-75">
+     <input type="number" id="phone" name="phone" required >
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <div class="col-25">
+      <label for="email">Email</label>
+    </div>
+    <div class="col-75">
+     <input type="text" id="email" name="email" required >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="email">Password</label>
+    </div>
+    <div class="col-75">
+     <input type="text" id="password" name="psw" required>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>
+  </form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Bootstrap CSS -->
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script
+	src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+	integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+	crossorigin="anonymous"></script>
+
+<style>
+body {
+	background-image: url('./resources//images//bg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+h1 {
+	color: red;
+	text-shadow: 2px 2px 4px #000000;
+	transform: translateX(100%);
+	animation: scrolling 15s linear infinite;
+}
+
+@keyframes scrolling {
+  0% {transform:translateX(100%);}
+  100%{transform:translateX(-100%);}
+}
+
+* {
+	box-sizing: border-box;
+}
+
+h2 {
+	padding: 40px;
+	text-align: center;
+}
+
+.div1 {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.div2 {
+	background-image: url('./resources//images//bg1.webp');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 80px;
+}
+
+.checked {
+	color: orange;
+}
+ul li a {
+	text-decoration: none;
+	box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+	}
+	
+	footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+  display: block;
+  
+}
+</style>
+</head>
+<body>
+	<!-- navbar -->
+	<div class="container-fluid">
+		<div class="row flex-nowrap">
+			<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark">
+				<br> <br> <br>
+				<div
+					class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100">
+					<a href="/"
+						class="d-flex align-items-center pb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+						<span class="fs-5 d-none d-sm-inline">Menu</span>
+					</a>
+					<ul
+						class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start"
+						id="menu">
+						<li class="nav-item"><a href="Register.html"
+							class="nav-link align-middle px-0"> <i class="fs-4 bi-house"></i><span
+								class="ms-1 d-none d-sm-inline">Registration</span>
+						</a></li>
+
+						<li><a href="Login.html" class="nav-link px-0 align-middle">
+								<i class="fs-4 bi-table"></i> <span
+								class="ms-1 d-none d-sm-inline">Login</span>
+						</a></li>
+						
+						<li><a href="About.html" class="nav-link px-0 align-middle">
+								<i class="fs-4 bi-table"></i> <span
+								class="ms-1 d-none d-sm-inline"> About us</span>
+						</a></li><br>
+						
+						<li><a href="https://www.facebook.com" class="nav-link px-0 align-middle">
+								<i class="fa fa-facebook" ></i><span class="ms-1 d-none d-sm-inline">
+								Facebook</span>
+						</a></li><br>
+						
+						<li><a href="https://twitter.com/login" class="nav-link px-0 align-middle">
+								<i class="fa fa-twitter" ></i> <span
+								class="ms-1 d-none d-sm-inline"> Twitter</span>
+						</a></li><br>
+						
+						<li><a href="https://www.google.com" class="nav-link px-0 align-middle">
+								<i class="fa fa-google-plus" ></i> <span
+								class="ms-1 d-none d-sm-inline"> Google</span>
+						</a></li><br>
+						
+						<li><a href="https://www.instagram.com" class="nav-link px-0 align-middle">
+								<i class="fa fa-instagram" ></i> <span
+								class="ms-1 d-none d-sm-inline"> Instagram</span>
+						</a></li>
+						
+					
+
+						<hr>
+
+						<div class="dropdown pb-5">
+							<a href="#"
+								class="d-flex align-items-center justify-content-center p-5  dropdown-toggle"
+								id="dropdownUser3" data-bs-toggle="dropdown"
+								aria-expanded="false"> <i class="bi bi-person-circle"></i>
+							</a>
+							<ul class="dropdown-menu dropdown-menu-dark text-small shadow">
+								<li><a class="dropdown-item" href="#">☎️+91 7529631020</a></li>
+								<li>
+									<hr class="dropdown-divider">
+								</li>
+								<li><a class="dropdown-item" href="LogOut">Log out</a></li>
+							</ul>
+						</div>
+				</div>
+				
+			</div>
+			<div class="div1">
+				<h1>🌍PL Tours And Travels</h1>
+			</div>
+			</div>
+	
+<footer>
+  <p>Design & Development:Priyanka Lamkhade...</p>
+</footer>
+
+</body>
+</html>
